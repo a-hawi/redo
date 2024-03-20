@@ -1,0 +1,231 @@
+.level_one {
+    height: 58vh;
+    width: 50%;
+    border: solid 1px;
+    margin: auto;
+    padding: 30px;
+
+
+    display: grid;
+    gap: 20px;
+
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "main main"
+    "main main"
+    "footer footer";
+}
+
+.level_one .grid_item {
+    border: solid 1px red;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+.level_two {
+    height: 50vh;
+    width: 50%;
+    border: solid 1px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 80px;
+
+
+    display: grid;
+    gap: 10px;
+
+    grid-template-areas: 
+    "left"
+    "right";
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.level_two .grid_item {
+    border: solid 1px red;
+    text-align: center;
+}
+    
+.level_two .left {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 4;
+}
+
+.level_two .right {
+    grid-column: 5 / span 9;
+    grid-row: 1 / span 4;
+}
+
+
+
+.level_three {
+    height: 50vh;
+    width: 50%;
+    border: solid 1px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+
+
+    display: grid;
+    gap: 20px;
+
+    grid-template-areas: 
+    "A"
+    "B"
+    "C";
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.level_three .grid_item {
+    border: solid 1px red;
+    text-align: center;
+}
+
+.level_three .A {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 5;
+}
+
+.level_three .B {
+    grid-column: 1 / span 8;
+    grid-row: 6 / span 11;
+}
+
+.level_three .C {
+    grid-column: 9 / span 4;
+    grid-row: 6 / span 11;
+}
+
+
+
+.level_four {
+    height: 50vh;
+    width: 50%;
+    border: solid 1px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+
+    display: grid;
+    gap: 20px;
+
+    grid-template-areas: 
+    "A"
+    "B"
+    "C"
+    "D"
+    "E";
+
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.level_four .grid_item {
+    border: solid 1px red;
+    text-align: center;
+}
+
+.level_four .A {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 4;
+}
+
+.level_four .B {
+    grid-column: 1 / span 8;
+    grid-row: 5 / span 5;
+}
+
+
+.level_four .C {
+    grid-column: 1 / span 4;
+    grid-row: 10 / span 7;
+}
+
+.level_four .D {
+    grid-column: 5 / span 4;
+    grid-row: 10 / span 7;
+}
+
+.level_four .E {
+    grid-column: 9 / span 4;
+    grid-row: 5 / span 12;
+}
+
+
+
+.level_five {
+    height: 50vh;
+    width: 50%;
+    border: solid 1px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+
+    display: grid;
+    gap: 20px;
+
+    grid-template-areas: 
+    "A"
+    "B"
+    "C"
+    "D"
+    "E"
+    "F";
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.level_five .grid_item {
+    border: solid 1px red;
+    text-align: center;
+}    
+
+.level_five .A {
+    grid-column: 1 / span 12;
+    grid-row:  1 / span 1;
+}
+
+.level_five .B {
+    grid-column:  3 / span 8;
+    grid-row: 2 / span 1;
+}
+
+.level_five .C {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 10;
+}
+
+.level_five .D {
+    grid-column: 3 / span 8;
+    grid-row:  3 / span 9;
+}
+
+.level_five .E {
+    grid-column: 11 / span 2;
+    grid-row: 2 / span 10;
+}
+
+.level_five .F {
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 1;
+}
